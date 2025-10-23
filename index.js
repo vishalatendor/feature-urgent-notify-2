@@ -1,7 +1,7 @@
 const { TinyColor } = require('@ctrl/tinycolor');
 
-// Sample code demonstrating @ctrl/tinycolor usage
-console.log('🎨 @ctrl/tinycolor Sample Code\n');
+// Sample code demonstrating @ctrl/tinycolor 1.x usage
+console.log('🎨 @ctrl/tinycolor 1.x Sample Code\n');
 
 // 1. Basic color creation and manipulation
 console.log('1. Basic Color Operations:');
@@ -44,7 +44,7 @@ const colorStrings = [
 
 colorStrings.forEach(colorStr => {
     const color = new TinyColor(colorStr);
-    console.log(`"${colorStr}" -> Valid: ${color.isValid}, Hex: ${color.toHexString()}`);
+    console.log(`"${colorStr}" -> Valid: ${color.isValid()}, Hex: ${color.toHexString()}`);
 });
 
 // 5. Color schemes and palettes
@@ -76,5 +76,13 @@ console.log('\n7. Random Color Generation:');
 const randomColor = TinyColor.random();
 console.log(`Random color: ${randomColor.toHexString()}`);
 console.log(`Random bright color: ${TinyColor.random().setAlpha(0.8).toHexString()}`);
+
+// 8. Additional 1.x specific features
+console.log('\n8. Additional 1.x Features:');
+const testColor = new TinyColor('#ff6b6b');
+console.log(`Is light: ${testColor.isLight()}`);
+console.log(`Is dark: ${testColor.isDark()}`);
+console.log(`Alpha value: ${testColor.getAlpha()}`);
+console.log(`To name: ${testColor.toName()}`);
 
 console.log('\n✨ Sample code completed!');
