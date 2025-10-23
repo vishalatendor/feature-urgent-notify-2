@@ -1,7 +1,7 @@
 const { TinyColor } = require('@ctrl/tinycolor');
 
-// Sample code demonstrating @ctrl/tinycolor 1.x usage
-console.log('🎨 @ctrl/tinycolor 1.x Sample Code\n');
+// Sample code demonstrating @ctrl/tinycolor 1.2.0 usage
+console.log('🎨 @ctrl/tinycolor 1.2.0 Sample Code\n');
 
 // 1. Basic color creation and manipulation
 console.log('1. Basic Color Operations:');
@@ -77,8 +77,8 @@ const randomColor = TinyColor.random();
 console.log(`Random color: ${randomColor.toHexString()}`);
 console.log(`Random bright color: ${TinyColor.random().setAlpha(0.8).toHexString()}`);
 
-// 8. Additional 1.x specific features
-console.log('\n8. Additional 1.x Features:');
+// 8. Additional 1.2.0 specific features
+console.log('\n8. Additional 1.2.0 Features:');
 const testColor = new TinyColor('#ff6b6b');
 console.log(`Is light: ${testColor.isLight()}`);
 console.log(`Is dark: ${testColor.isDark()}`);
