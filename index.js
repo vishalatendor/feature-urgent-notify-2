@@ -1,7 +1,7 @@
 const { TinyColor } = require('@ctrl/tinycolor');
 
-// Sample code demonstrating @ctrl/tinycolor 1.2.0 usage
-console.log('🎨 @ctrl/tinycolor 1.2.0 Sample Code\n');
+// Sample code demonstrating @ctrl/tinycolor 2.x usage
+console.log('🎨 @ctrl/tinycolor 2.x Sample Code\n');
 
 // 1. Basic color creation and manipulation
 console.log('1. Basic Color Operations:');
@@ -77,12 +77,21 @@ const randomColor = TinyColor.random();
 console.log(`Random color: ${randomColor.toHexString()}`);
 console.log(`Random bright color: ${TinyColor.random().setAlpha(0.8).toHexString()}`);
 
-// 8. Additional 1.2.0 specific features
-console.log('\n8. Additional 1.2.0 Features:');
+// 8. Additional 2.x specific features
+console.log('\n8. Additional 2.x Features:');
 const testColor = new TinyColor('#ff6b6b');
 console.log(`Is light: ${testColor.isLight()}`);
 console.log(`Is dark: ${testColor.isDark()}`);
 console.log(`Alpha value: ${testColor.getAlpha()}`);
 console.log(`To name: ${testColor.toName()}`);
+
+// 9. Readability and contrast features (2.x enhancements)
+console.log('\n9. Readability Features:');
+const foreground = new TinyColor('#000000');
+const background = new TinyColor('#ffffff');
+const readability = foreground.readability(background);
+console.log(`Foreground: ${foreground.toHexString()}`);
+console.log(`Background: ${background.toHexString()}`);
+console.log(`Readability score: ${readability.toFixed(2)}`);
 
 console.log('\n✨ Sample code completed!');

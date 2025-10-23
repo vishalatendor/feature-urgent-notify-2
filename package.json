@@ -16,7 +16,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@ctrl/tinycolor": "^1.2.0"
+    "@ctrl/tinycolor": "^2.0.0"
   },
   "engines": {
     "node": ">=14.0.0"
